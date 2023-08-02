@@ -1,9 +1,9 @@
 {
-    "Identifier": "",
-    "Slug": "",
-    "Status": "",
-    "Title": "",
-    "Description": "",
+    "Identifier": "eos1mxi",
+    "Slug": "smiles-pe",
+    "Status": "In progress",
+    "Title": "SmilesPE: tokenizer algorithm for SMILES, DeepSMILES, and SELFIES",
+    "Description": "The Smiles Pair Encoding method generates smiles substring tokens based on high-frequency token pairs from large chemical datasets. This method is well-suited for both QSAR activities as well as generative models. The model provided here has been pretrained using ChEMBL.",
     "Mode": "",
     "Task": [],
     "Input": [],
@@ -12,8 +12,12 @@
     "Output Type": [],
     "Output Shape": "",
     "Interpretation": "",
-    "Tag": [],
-    "Publication": "",
-    "Source Code": "",
-    "License": ""
+    "Tag": [
+        "Chemical language model",
+        "Chemical notation",
+        "ChEMBL"
+    ],
+    "Publication": "https://pubs.acs.org/doi/abs/10.1021/acs.jcim.0c01127",
+    "Source Code": "https://github.com/XinhaoLi74/SmilesPE",
+    "License": "Apache-2.0"
 }
