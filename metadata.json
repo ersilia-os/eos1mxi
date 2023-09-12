@@ -9,7 +9,7 @@
     "Input": ["Text"],
     "Input Shape": "",
     "Output": [],
-    "Output Type": ["String", "Tuple"],
+    "Output Type": ["String", "Tuple", "List"],
     "Output Shape": "List",
     "Interpretation": "",
     "Tag": [
