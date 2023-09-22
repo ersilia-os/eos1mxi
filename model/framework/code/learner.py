@@ -15,7 +15,7 @@ import re
 from collections import defaultdict, Counter
 from fastprogress.fastprogress import master_bar, progress_bar
 
-from .pretokenizer import *
+from pretokenizer import *
 
 def randomize_smiles(smiles):
     """

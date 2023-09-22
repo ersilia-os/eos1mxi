@@ -2,6 +2,8 @@
 import os
 import csv
 import sys
+import codecs
+from tokenizer import *
 from rdkit import Chem
 from rdkit.Chem.Descriptors import MolWt
 

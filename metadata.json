@@ -1,4 +1,4 @@
-{
+ {
     "Identifier": "eos1mxi",
     "Slug": "smiles-pe",
     "Status": "In progress",
@@ -6,11 +6,11 @@
     "Description": "The Smiles Pair Encoding method generates smiles substring tokens based on high-frequency token pairs from large chemical datasets. This method is well-suited for both QSAR activities as well as generative models. The model provided here has been pretrained using ChEMBL.",
     "Mode": "Pretrained",
     "Task": [],
-    "Input": ["Text", "List"],
+    "Input": [],
     "Input Shape": "",
     "Output": [],
-    "Output Type": ["String", "List"],
-    "Output Shape": "List",
+    "Output Type": [],
+    "Output Shape": "",
     "Interpretation": "",
     "Tag": [
         "Chemical language model",

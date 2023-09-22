@@ -12,8 +12,8 @@ import re
 import warnings
 import random
 sys.path.append('..')
-from .pretokenizer import *
-from .learner import *
+from pretokenizer import *
+from learner import *
 
 
 class SPE_Tokenizer(object):
