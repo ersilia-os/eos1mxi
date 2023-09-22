@@ -11,18 +11,25 @@ from rdkit.Chem.Descriptors import MolWt
 input_file = sys.argv[1]
 output_file = sys.argv[2]
 
+spe_vob = codecs.open("../data/SPE_ChEMBL.txt")
+spe = SPE_Tokenizer(spe_vob)
+
 # current file directory
 root = os.path.dirname(os.path.abspath(__file__))
 
 # my model
 def my_model(smiles_list):
-    return [MolWt(Chem.MolFromSmiles(smi)) for smi in smiles_list]
+    return [spe.tokenize(smi) for smi in smiles_list]
 
+# writing the user's SMILES to a file
+with open("user_input", "w") as f:
+    f.write(input_file)
 
 # read SMILES from .csv file, assuming one column with header
-with open(input_file, "r") as f:
+with open("user_input", "r") as f:
     reader = csv.reader(f)
-    next(reader)  # skip header
+    newnew = next(reader)  # skip header
+    print(newnew)
     smiles_list = [r[0] for r in reader]
 
 # run model
@@ -39,3 +46,4 @@ with open(output_file, "w") as f:
     writer.writerow(["value"])  # header
     for o in outputs:
         writer.writerow([o])
+print(output_file)
