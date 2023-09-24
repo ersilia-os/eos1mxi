@@ -9,7 +9,7 @@ from rdkit.Chem.Descriptors import MolWt
 
 # parse arguments
 input_file = sys.argv[1]
-output_file = sys.argv[2]
+#output_file = sys.argv[2]
 
 spe_vob = codecs.open("../data/SPE_ChEMBL.txt")
 spe = SPE_Tokenizer(spe_vob)
@@ -28,9 +28,7 @@ with open("user_input", "w") as f:
 # read SMILES from .csv file, assuming one column with header
 with open("user_input", "r") as f:
     reader = csv.reader(f)
-    newnew = next(reader)  # skip header
-    print(newnew)
-    smiles_list = [r[0] for r in reader]
+    smiles_list = next(reader)  # skip header
 
 # run model
 outputs = my_model(smiles_list)
@@ -41,9 +39,12 @@ output_len = len(outputs)
 assert input_len == output_len
 
 # write output in a .csv file
-with open(output_file, "w") as f:
+with open("output_file", "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["value"])  # header
+    #writer.writerow([outputs])  # header
     for o in outputs:
         writer.writerow([o])
-print(output_file)
+
+with open('output_file', 'r') as f:
+    tokenized_string = f.read()
+print(tokenized_string)
