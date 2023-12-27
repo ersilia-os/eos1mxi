@@ -8,7 +8,7 @@
     "Task": ["Generative"],
     "Input": ["Compound"],
     "Input Shape": "Single",
-    "Output": ["Text"],
+    "Output": ["Compound"],
     "Output Type": ["String"],
     "Output Shape": "Single",
     "Interpretation": "A data-driven tokenization method for SMILES-based deep learning models in cheminformatics, demonstrating high performance in molecular generation and QSAR prediction tasks compared to atom-level tokenization",
