@@ -2,8 +2,8 @@
 import os
 import csv
 import sys
-from rdkit import Chem
-from rdkit.Chem.Descriptors import MolWt
+import codecs
+from SmilesPE.tokenizer import *
 
 # parse arguments
 input_file = sys.argv[1]
@@ -11,10 +11,14 @@ output_file = sys.argv[2]
 
 # current file directory
 root = os.path.dirname(os.path.abspath(__file__))
+checkpoint = os.path.abspath(os.path.join(root,"..", "..","checkpoints", "SPE_ChEMBL.txt"))
+
+spe_vob = codecs.open(checkpoint)
+spe = SPE_Tokenizer(spe_vob)
 
 # my model
 def my_model(smiles_list):
-    return [MolWt(Chem.MolFromSmiles(smi)) for smi in smiles_list]
+    return [spe.tokenize(smi) for smi in smiles_list]
 
 
 # read SMILES from .csv file, assuming one column with header
