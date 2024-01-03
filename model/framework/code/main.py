@@ -37,6 +37,8 @@ for item in temp_outputs:
     tokens = item.split()
     outputs.append(tokens)
 
+N_SAMPLES = max(len(tokens) for tokens in outputs)
+
 #check input and output have the same lenght
 input_len = len(smiles_list)
 output_len = len(outputs)
@@ -45,6 +47,7 @@ assert input_len == output_len
 # write output in a .csv file
 with open(output_file, "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["value"])  # header
+    header = ["token_{0}".format(i) for i in range(N_SAMPLES)]
+    writer.writerow(header)  # header
     for o in outputs:
-        writer.writerow([o])
+        writer.writerow(o)
