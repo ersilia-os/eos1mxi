@@ -3,6 +3,7 @@ import os
 import csv
 import sys
 import codecs
+import re
 from SmilesPE.tokenizer import *
 
 # parse arguments
@@ -28,7 +29,15 @@ with open(input_file, "r") as f:
     smiles_list = [r[0] for r in reader]
 
 # run model
-outputs = my_model(smiles_list)
+temp_outputs = my_model(smiles_list)
+
+outputs= []
+
+for item in temp_outputs:
+    tokens = item.split()
+    outputs.append(tokens)
+
+N_SAMPLES = max(len(tokens) for tokens in outputs)
 
 #check input and output have the same lenght
 input_len = len(smiles_list)
@@ -38,6 +47,7 @@ assert input_len == output_len
 # write output in a .csv file
 with open(output_file, "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["outcome"])  # header
+    header = ["token_{0}".format(i) for i in range(N_SAMPLES)]
+    writer.writerow(header)  # header
     for o in outputs:
-        writer.writerow([o])
+        writer.writerow(o)
