@@ -21,7 +21,7 @@ The Smiles Pair Encoding method generates smiles substring tokens based on high-
 
 * [Publication](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.0c01127)
 * [Source Code](https://github.com/XinhaoLi74/SmilesPE)
-* Ersilia contributor: [russelljeffrey](https://github.com/russelljeffrey)
+* Ersilia contributor: [Richiio](https://github.com/Richiio)
 
 ## Ersilia model URLs
 * [GitHub](https://github.com/ersilia-os/eos1mxi)
