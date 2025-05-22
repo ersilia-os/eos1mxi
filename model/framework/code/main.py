@@ -32,9 +32,11 @@ with open(input_file, "r") as f:
 temp_outputs = my_model(smiles_list)
 
 outputs= []
-
+MAX_TOKENS = 50
 for item in temp_outputs:
     tokens = item.split()
+    tokens = tokens[:MAX_TOKENS]
+    tokens += [''] * (MAX_TOKENS - len(tokens))
     outputs.append(tokens)
 
 N_SAMPLES = max(len(tokens) for tokens in outputs)
@@ -47,7 +49,7 @@ assert input_len == output_len
 # write output in a .csv file
 with open(output_file, "w") as f:
     writer = csv.writer(f)
-    header = ["token_{0}".format(i) for i in range(N_SAMPLES)]
+    header = ["token_{:02}".format(i) for i in range(50)]
     writer.writerow(header)  # header
     for o in outputs:
         writer.writerow(o)
