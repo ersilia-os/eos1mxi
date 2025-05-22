@@ -50,7 +50,12 @@ _10 of 50 columns are shown_
 ### Resource Consumption
 - **Model Size (Mb):** `1`
 - **Environment Size (Mb):** `596`
+- **Image Size (Mb):** `561.62`
 
+**Computational Performance (seconds):**
+- 10 inputs: `28.88`
+- 100 inputs: `22.61`
+- 10000 inputs: `181.09`
 
 ### References
 - **Source Code**: [https://github.com/XinhaoLi74/SmilesPE](https://github.com/XinhaoLi74/SmilesPE)
