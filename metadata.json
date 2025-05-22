@@ -3,21 +3,18 @@
     "Slug": "smiles-pe",
     "Status": "Ready",
     "Title": "SmilesPE: tokenizer algorithm for SMILES, DeepSMILES, and SELFIES",
-    "Description": "The Smiles Pair Encoding method generates smiles substring tokens based on high-frequency token pairs from large chemical datasets. This method is well-suited for both QSAR activities as well as generative models. The model provided here has been pretrained using ChEMBL.\n",
+    "Description": "The Smiles Pair Encoding method generates smiles substring tokens based on high-frequency token pairs from large chemical datasets. This method is well-suited for both QSAR activities as well as generative models. The model provided here has been pretrained using ChEMBL.",
+    "Deployment": [
+        "Local"
+    ],
     "Source": "Local",
     "Source Type": "External",
+    "Task": "Representation",
+    "Subtask": "Featurization",
     "Input": [
         "Compound"
     ],
     "Input Dimension": 1,
-    "Task": "Representation",
-    "Subtask": "Featurization",
-    "Biomedical Area": [
-        "Any"
-    ],
-    "Target Organism": [
-        "Not Applicable"
-    ],
     "Output": [
         "Compound"
     ],
@@ -29,20 +26,25 @@
         "Chemical notation",
         "ChEMBL"
     ],
-    "Publication": "https://pubs.acs.org/doi/abs/10.1021/acs.jcim.0c01127",
+    "Biomedical Area": [
+        "Any"
+    ],
+    "Target Organism": [
+        "Not Applicable"
+    ],
     "Publication Type": "Peer reviewed",
     "Publication Year": 2021,
+    "Publication": "https://pubs.acs.org/doi/abs/10.1021/acs.jcim.0c01127",
     "Source Code": "https://github.com/XinhaoLi74/SmilesPE",
     "License": "Apache-2.0",
     "Contributor": "Richiio",
     "Incorporation Date": "2023-08-02",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos1mxi.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos1mxi",
     "Docker Architecture": [
         "AMD64",
         "ARM64"
     ],
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos1mxi.zip",
-    "Deployment": [
-        "Local"
-    ]
+    "Model Size": 1.0,
+    "Environment Size": 596.0
 }
