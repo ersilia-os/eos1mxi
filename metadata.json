@@ -39,6 +39,8 @@
     "License": "Apache-2.0",
     "Contributor": "Richiio",
     "Incorporation Date": "2023-08-02",
+    "Last Packaging Date": "2025-10-17",
+    "Release": "v1.0.0",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos1mxi.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos1mxi",
     "Docker Architecture": [
@@ -47,10 +49,10 @@
     ],
     "Model Size": 1.0,
     "Environment Size": 610.0,
-    "Image Size": 561.62,
-    "Computational Performance 1": 28.88,
-    "Computational Performance 2": 18.57,
-    "Computational Performance 3": 22.61,
-    "Computational Performance 4": 47.92,
-    "Computational Performance 5": 181.09
+    "Image Size": 578.83,
+    "Computational Performance 1": 27.18,
+    "Computational Performance 2": 16.99,
+    "Computational Performance 3": 16.99,
+    "Computational Performance 4": 17.53,
+    "Computational Performance 5": 20.94
 }
