@@ -4,6 +4,7 @@ The Smiles Pair Encoding method generates smiles substring tokens based on high-
 
 This model was incorporated on 2023-08-02.
 
+
 ## Information
 ### Identifiers
 - **Ersilia Identifier:** `eos1mxi`
@@ -13,7 +14,7 @@ This model was incorporated on 2023-08-02.
 - **Task:** `Representation`
 - **Subtask:** `Featurization`
 - **Biomedical Area:** `Any`
-- **Target Organism:** `Not Applicable`
+- **Target Organism:** `Any`
 - **Tags:** `Chemical language model`, `Chemical notation`, `ChEMBL`
 
 ### Input
