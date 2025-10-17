@@ -2,8 +2,7 @@
 
 The Smiles Pair Encoding method generates smiles substring tokens based on high-frequency token pairs from large chemical datasets. This method is well-suited for both QSAR activities as well as generative models. The model provided here has been pretrained using ChEMBL.
 
-This model was incorporated on 2023-08-02.
-
+This model was incorporated on 2023-08-02.Last packaged on 2025-10-17.
 
 ## Information
 ### Identifiers
@@ -51,12 +50,12 @@ _10 of 50 columns are shown_
 ### Resource Consumption
 - **Model Size (Mb):** `1`
 - **Environment Size (Mb):** `610`
-- **Image Size (Mb):** `561.62`
+- **Image Size (Mb):** `578.83`
 
 **Computational Performance (seconds):**
-- 10 inputs: `28.88`
-- 100 inputs: `22.61`
-- 10000 inputs: `181.09`
+- 10 inputs: `27.18`
+- 100 inputs: `16.99`
+- 10000 inputs: `20.94`
 
 ### References
 - **Source Code**: [https://github.com/XinhaoLi74/SmilesPE](https://github.com/XinhaoLi74/SmilesPE)
