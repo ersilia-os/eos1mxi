@@ -59,7 +59,7 @@ _10 of 50 columns are shown_
 
 ### References
 - **Source Code**: [https://github.com/XinhaoLi74/SmilesPE](https://github.com/XinhaoLi74/SmilesPE)
-- **Publication**: [https://pubs.acs.org/doi/abs/10.1021/acs.jcim.0c01127](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.0c01127)
+- **Publication**: [https://doi.org/10.1021/acs.jcim.0c01127](https://doi.org/10.1021/acs.jcim.0c01127)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2021`
 - **Ersilia Contributor:** [Richiio](https://github.com/Richiio)
