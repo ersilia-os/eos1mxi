@@ -1,6 +1,6 @@
 # SmilesPE: tokenizer algorithm for SMILES, DeepSMILES, and SELFIES
 
-The Smiles Pair Encoding method generates smiles substring tokens based on high-frequency token pairs from large chemical datasets. This method is well-suited for both QSAR activities as well as generative models. The model provided here has been pretrained using ChEMBL.
+Splits a SMILES string into 50 substructure tokens using SMILES Pair Encoding, which learns its vocabulary from data rather than treating each character as a unit. Li and Fourches adapted byte-pair encoding from language modelling, repeatedly merging the most frequent adjacent symbol pairs across a large chemical corpus so that recurring functional groups and ring systems become single tokens. The resulting representation shortens sequences and gave better performance than character tokenisation on low-data property prediction tasks.
 
 This model was incorporated on 2023-08-02.Last packaged on 2025-10-17.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2023-08-02.Last packaged on 2025-10-17.
 ### Output
 - **Output Dimension:** `50`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Tokens representative of the input SMILES
+- **Interpretation:** 50 substructure tokens derived from data-driven SMILES pair encoding.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
