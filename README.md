@@ -1,6 +1,6 @@
 # SmilesPE: tokenizer algorithm for SMILES, DeepSMILES, and SELFIES
 
-Splits a SMILES string into 50 substructure tokens using SMILES Pair Encoding, which learns its vocabulary from data rather than treating each character as a unit. Li and Fourches adapted byte-pair encoding from language modelling, repeatedly merging the most frequent adjacent symbol pairs across a large chemical corpus so that recurring functional groups and ring systems become single tokens. The resulting representation shortens sequences and gave better performance than character tokenisation on low-data property prediction tasks.
+Splits a SMILES string into substructure tokens with SMILES Pair Encoding, which learns its vocabulary from data instead of treating each character as a unit. Li and Fourches adapted byte-pair encoding from language modelling, merging the most frequent adjacent symbol pairs across 3.4 million ChEMBL SMILES until 3,002 recurring fragments, from functional groups to ring systems, became single tokens. Sequences come out shorter than atom-level ones and matched or beat them across 24 QSAR benchmarks. The bundled vocabulary is the ChEMBL one, and output is truncated or padded to 50 tokens.
 
 This model was incorporated on 2023-08-02.Last packaged on 2025-10-17.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2023-08-02.Last packaged on 2025-10-17.
 ### Output
 - **Output Dimension:** `50`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** 50 substructure tokens derived from data-driven SMILES pair encoding.
+- **Interpretation:** Up to 50 substructure tokens from a ChEMBL-derived SMILES pair encoding vocabulary.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
