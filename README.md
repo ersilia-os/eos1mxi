@@ -2,7 +2,8 @@
 
 Splits a SMILES string into substructure tokens with SMILES Pair Encoding, which learns its vocabulary from data instead of treating each character as a unit. Li and Fourches adapted byte-pair encoding from language modelling, merging the most frequent adjacent symbol pairs across 3.4 million ChEMBL SMILES until 3,002 recurring fragments, from functional groups to ring systems, became single tokens. Sequences come out shorter than atom-level ones and matched or beat them across 24 QSAR benchmarks. The bundled vocabulary is the ChEMBL one, and output is truncated or padded to 50 tokens.
 
-This model was incorporated on 2023-08-02.Last packaged on 2025-10-17.
+This model was incorporated on 2023-08-02.
+Last packaged on 2025-10-17.
 
 ## Information
 ### Identifiers
@@ -46,6 +47,7 @@ _10 of 50 columns are shown_
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos1mxi](https://hub.docker.com/r/ersiliaos/eos1mxi)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos1mxi.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos1mxi.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos1mxi_v1.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos1mxi_v1.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `1`
